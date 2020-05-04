@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ html,body {
+   height: 100vh;
+   width: 100%;
+   font-size: 16px;
+ }
+
+@font-face {
+    font-family: 'Monument';
+    src: url(img/MonumentExtended-Ultrabold.otf);
+}
+
+.purple {
+    color: #6B70FF;
+}
+
+h1, h2, h3, h5, a {
+    font-family: 'Monument';
+    letter-spacing: 0.15vw;
+    color: #fff;
+}
+
+h5 {
+  font-size: 1.3vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFD474;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+p, ol, li {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1.6vw;
+    line-height: 1.7;
+}
+
+.navigation-scrolled ul.navi li a {
+  color: #FFD474;
+}
+
+.navigation-scrolled .logo {
+  background-image: url(img/pasto_gelb.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  vertical-align: top;
+  width: 18%;
+  height: 100%;
+
+}
+
+.navigation {
+    position: fixed;
+    z-index: 102;
+    width: 60%;
+    margin: 10% 20% 0 20%;
+}
+ 
+.logo {
+    background-image: url(img/pasto.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    position: absolute;
+    vertical-align: top;
+    width: 18%;
+    height: 100%;
+}
+
+ ul.navi {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden; 
+   width: 100%;
+ }
+ 
+ ul.navi li {
+   float: right;
+   padding-left: 2%;
+ }
+ 
+ ul.navi li a {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1vw;
+ }
+ 
+ 
+ .hero {
+   position: relative;
+   background-image: url(img/wave_1.svg);
+   background-repeat: repeat-x;
+   background-size: auto 100%;
+   background-position: top;
+   overflow: hidden;
+
+   width: 100%;
+   z-index: 101;
+ }
+ 
+ .hero-txt {
+   position: relative;
+   margin: 20% 20% 20% 20%;
+
+   z-index: 101;
+ }
+ 
+ .arrow {
+   position: absolute;
+   width: 100%;
+   height: 15%;
+   margin-top: 5%;
+
+   z-index: 102;
+ }
+
+ .arrow-icon {
+   position: relative;
+   background-image: url(img/arrow.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100%;
+   width: 100%;
+
+   display: inline-block;
+ }
+
+ .arrow-icon:hover {
+  position: relative;
+  background-image: url(img/arrow_hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+ }
+
+ .about {
+   position: relative;
+   width: 100%;
+   margin-top: -15%;
+
+   z-index: 90;
+ }
+ 
+ .about-img {
+   position: relative;
+   background-repeat: no-repeat;
+   background-position: top;
+   background-size: cover;
+   width: 100%;
+ }
+
+ .about-txt-container {
+   position: relative;
+   width: 100%;
+   margin: 5% 0 5% 0;
+ }
+ 
+ .about-txt {
+   position: relative;
+   margin: 0 20% 0 20%;
+ }
+
+ .txt-1-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  background-image: url(img/wave_2.svg);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: top;
+  
+  z-index: 80;
+  display: block;
+}
+
+.txt-1-txt {
+  position: relative;
+  margin: 10% 20% 10% 20%;
+
+  z-index: 82;
+}
+ 
+ .donate-container {
+   position: relative;
+   width: 100%;
+   margin: 2% 0 3% 0;
+ }
+ 
+ .donate-txt {
+   position: relative;
+   margin: 0 20% 0 20%;
+ }
+ 
+ footer {
+   background-color: #6B70FF;
+   padding: 2vh 20% 2vh 20%;  
+   overflow: hidden;
+   display: flex;
+ }
+
+.ft {
+  overflow: hidden;
+  padding-left: 15%;
+}
+
+.impressum {
+  width: 100%;
+  background-color: #6B70FF;
+}
+
+.impressum-txt {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+
+
+@media screen and (max-width: 720px) {
+
+  ul.navi li a {
+    font-size: 2vw;
+  }
+
+  .navigation-scrolled .logo {
+    background-size: contain;
+  }
+
+  .navigation {
+    width: 80%;
+    margin: 10% 10% 20% 10%;
+  }
+
+  p {
+    font-size: 3vw;
+    line-height: 1.7;
+  }
+
+  ol, li {
+    font-size: 1.5vw;
+  }
+
+  .arrow {
+    height: 10%;
+  }
+  
+  .hero-txt {
+    margin: 20% 10% 20% 10%;
+  }
+
+  .about-txt {
+    margin: 5% 10% 5% 10%;
+  }
+
+  .txt-1-txt {
+    margin: 20% 10% 20% 10%;
+  }
+
+  .donate-txt {
+    margin: 0% 10% 0% 10%;
+  }
+
+  footer {
+    padding: 2vh 10% 2vh 10%; 
+  }
+}
