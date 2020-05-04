@@ -234,6 +234,11 @@ p, ol, li {
 
 @media screen and (max-width: 720px) {
 
+  h1, h2, h3, h5, a {
+    letter-spacing: 0vw;
+}  
+    
+    
   ul.navi li a {
     font-size: 2vw;
   }
