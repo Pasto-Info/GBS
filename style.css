@@ -192,7 +192,7 @@ p, ol, li {
 
 .txt-1-txt {
   position: relative;
-  margin: 10% 20% 10% 20%;
+  margin: 10% 20% 0% 20%;
 
   z-index: 82;
 }
@@ -230,15 +230,20 @@ p, ol, li {
   margin: 0 auto 0 auto;
 }
 
+.repro-container {
+  position: relative;
+  width: 100%;
+}
+
+.repro {
+  width: 60%;
+  margin: 3% 20% 10% 20%;
+}
+
 
 
 @media screen and (max-width: 720px) {
 
-  h1, h2, h3, h5, a {
-    letter-spacing: 0vw;
-}  
-    
-    
   ul.navi li a {
     font-size: 2vw;
   }
@@ -274,7 +279,12 @@ p, ol, li {
   }
 
   .txt-1-txt {
-    margin: 20% 10% 20% 10%;
+    margin: 20% 10% 0% 10%;
+  }
+
+  .repro {
+    width: 80%;
+    margin: 5% 10% 20% 10%;
   }
 
   .donate-txt {
